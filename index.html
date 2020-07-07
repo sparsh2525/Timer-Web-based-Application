@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clockworks</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link id="style" rel="stylesheet" href="defstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Clockworks</h1>
+        <section id="controls">
+            <div class="input">
+                <label for="minute-input">Minutes</label>
+                <input type="number" placeholder="0" id="minute-input" max="300" min="0">
+            </div>
+            <div class="input">
+                <label for="second-input">Seconds</label>
+                <input type="number" placeholder="0" id="second-input" max="59" min="0" step="5" >
+            </div>
+            <button id="start" onclick="startTimer()">Start</button>
+            <button id="stop" onclick="stopTimer()" disabled>Stop</button>
+            <button id="pause" onclick="pauseTimer()" disabled>Pause</button>
+        </section>
+        <h2><span id="minute">0</span>:<span id="second">00</span></h2>
+        <button id="theme" onclick="swapStyle()">Switch Theme</button>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript" async defer></script>
+    </body>
+</html>
